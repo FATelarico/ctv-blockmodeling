@@ -9,13 +9,11 @@ source: https://github.com/FATelarico/ctv-blockmodeling
 
 This CRAN Task View contains a list of packages that can be used for finding groups in networks (also known as _relational data_ and _graphs_) based on a selected definition of equivalence. 
 
-*Blockmodeling* (BM) is a set of statistical models used to cluster relational data. The various available BMs cluster units adopt different definitions of equivalence based on which the units are grouped: _structural_, _regular_, _generalised_, and _stochastic_ equivalence.
-
-Furthermore, each of these equivalences can be implemented in conjunciton with different conceptualisations of the networks: static, temporal, linked, multi-level, and so on.
+*Blockmodeling* (BM) is a set of statistical models used to cluster relational data. The various available BMs cluster units adopt different definitions of equivalence based on which the units are grouped: _structural_, _regular_, _generalised_, and _stochastic_ equivalence. Furthermore, each of these equivalences can be implemented in conjunction with different conceptualisations of the networks: static, temporal, linked, multi-level, and so on.
 
 Moreover, the literature offers various computational methods to determine the final partition: hierarchical clustering, local optimisation, k-means, expectation-maximisation, and so on.
 
-This task view includes models all R packages that cluster units in relational data regardless of the definition of network and the conceptualisaton of groups. This includes packages that assume the cluster membership is a latent variable or simple an aggregation of units contingent on a starting point. As well as packages that deal with static networks, dynamic (or temporal) ones, multi-level, linked, or multipartite.
+This task view includes all R packages that cluster units in relational data regardless of the definition of network and the conceptualisaton of groups. This includes packages that assume the cluster membership is a latent variable or simple an aggregation of units contingent on a starting point. As well as packages that deal with static networks, dynamic (or temporal) ones, multi-level, linked, or multipartite.
 
 ### Generalised blockmodeling (structural and/or regular equivalence)
 
