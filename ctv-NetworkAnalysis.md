@@ -3,7 +3,7 @@ name: Network Analysis
 topic: NetworkAnalysis
 maintainer: Fabio Ashtar Telarico, Saint-Clair Chabert-Liddell, Carl Nordlund
 email: Fabio-Ashtar.Telarico@fdv.uni-lj.si
-version: 2023-04-14
+version: 2023-04-16
 source: https://github.com/FATelarico/ctv-network
 ---
 
