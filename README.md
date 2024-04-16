@@ -1,1 +1,1 @@
-Proposal of a CRAN Task View on Network Analysis
+Proposal of a CRAN Task View on Blockmodeling
