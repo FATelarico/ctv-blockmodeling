@@ -1,7 +1,7 @@
 ---
 name: Network Analysis
 topic: NetworkAnalysis
-maintainer: Fabio Ashtar Telarico
+maintainer: Fabio Ashtar Telarico (@FATelarico), Pavel N. Krivitsky (@krivit)
 email: Fabio-Ashtar.Telarico@fdv.uni-lj.si
 version: 2023-04-16
 source: https://github.com/FATelarico/ctv-network
