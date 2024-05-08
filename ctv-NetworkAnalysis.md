@@ -3,7 +3,7 @@ name: Network Analysis
 topic: NetworkAnalysis
 maintainer: Fabio Ashtar Telarico (@FATelarico), Pavel N. Krivitsky (@krivit)
 email: Fabio-Ashtar.Telarico@fdv.uni-lj.si
-version: 2023-04-26
+version: 2023-05-08
 source: https://github.com/FATelarico/ctv-network
 ---
 
@@ -22,9 +22,7 @@ This page is articulated in sections listing the packages/functions to perform s
 4. Finally, packages and functions for two advanced network-analytic tasks are presented: visualisation and clustering. In the latter case, the items listed are distinguished on the basis of their approach into three categories:
 
     - community detection,
-    
-    - blockmodeling,
-    
+    - blockmodeling;
     - others.
 
 Some packages could be placed under more heading because they can perform multiple tasks (e.g., clustering and visualisation). But for the sake of brevity, non-core packages are listed only once: in the section that described each package's main use case.
@@ -171,7 +169,7 @@ Being a flexible method, network analysis is used in a number of fields with spe
 
 - `r pkg("Diderot")` is geared towards the analysis of citation networks using  modularity and heterocitation metrics based on Scopus data.
     
-## (Bio)-Chemical networks
+## Biology and (Bio)-Chemistry Networks
 
   - `r pkg("WGCNA")` focuses on the analysis of weighted correlation networks. It has functions for network construction, modularity computation, gene selection, topological analysis, generating data, plotting, and exports to third-party software. Notably, the underlying data mining approach has been used beyond biochemistry. There are several packages on Bioconductor that reverse-depend/extend these functionalities.
 
