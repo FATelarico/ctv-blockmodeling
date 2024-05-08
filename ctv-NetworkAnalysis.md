@@ -9,7 +9,8 @@ source: https://github.com/FATelarico/ctv-network
 
 This CRAN Task View contains a list of packages that can be used for dealing with networks (also known as _relational data_ and _graphs_).
 
-The pacakges listed in this page offer tools for analysing and modeling relational data as the representation of a phenomenon - be it natural, social, or otherwise artificial - that manifests itself in the relations between one or more sets of entities. Hence, the following list does not deal with graphical models, in which networks only express the conditional dependence structure between random variables.
+This list of R packages is curated to include tools specifically designed for analysing and modeling relational data. These packages facilitate the examination of phenomena - be they natural, social, or otherwise artificial - that manifest themselves in the relations between one or more sets of entitiess.
+Conversely, the list excludes packages that primarily deal with graphical models defined as graph representions of conditional in/dependence between variables. This includes Markovian graphs, which, despite their relevance in statistical modeling, are better covered under the CRAN TaskView on [Graphical Models](https://cran.r-project.org/web/views/GraphicalModels.html). This distinction keeps the list focused on network analysis that goes beyond mere statistical dependencies, aiming instead to explore broader relational dynamics.
 
 This page is articulated in sections listing the packages/functions to perform specific operations on networks. The packages are categorised based on their scope and focus as follows:
 
@@ -31,8 +32,7 @@ If you think that some package is missing from the list, please file an issue in
 
 # Main Packages & Basic tasks
 
-- `r pkg("igraph", priority = "core")` provides tools for creating, manipulating, and analysing network structures with a focus on _nice_ graphical representations and fast algorithms to operate on large datasets (particularly manipulating data and
-dealing with vertex attributes).
+- `r pkg("igraph", priority = "core")` provides tools for creating, manipulating, and analysing network structures with a focus on _nice_ graphical representations and fast algorithms to operate on large datasets (particularly manipulating data and dealing with vertex attributes).
 
   - *Approach*: igraph takes a somewhat 'basic' approach to network analysis. However, it still contains a lot of functionality, including
 calculating network properties, generating random graphs for simulations, etc. and will probably fit most users' needs.
@@ -216,8 +216,6 @@ Being a flexible method, network analysis is used in a number of fields with spe
   
   - `r pkg ("EpiModel")` builds on Statnet's for epidemic modelling. But more on this field of application can be found in the [CTV: Epidemiology](https://cran.r-project.org/view=Epidemiology).
 
- 
-    
 ## Social and Economic networks
 
 - `r pkg ("sna")` implements many operations commonly carried out on networks in the social and econonomic sciences with the ability of regress a network variable on others using ordinary least square, linear network autocorrelation models or a logistic regression.^[More on this type of applications can be found in the CRAN TaskView on [Graphical Models](https://cran.r-project.org/web/views/GraphicalModels.html)]
