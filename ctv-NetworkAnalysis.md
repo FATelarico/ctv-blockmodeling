@@ -100,22 +100,18 @@ Both main packages can compute betweenness, eigenvalue, power, and closeness cen
 
 This section does not include Bayesian networks and Markov Random-Field models as they merely represent relations between variables and are listed in the CRAN TaskView on [Graphical Models](https://cran.r-project.org/web/views/GraphicalModels.html) 
 
-- `r pkg("goldfish")` offers functions for fitting statistical network models to dynamic network data (both dynamic network actor models and relational event models). 
-
-- `r pkg("ergm")` provides function to fit, simulate and analyse exponential random graph models (ERGM). Depending on specific needs, several specialised extentions are available (for an alternative see `r pkg("dnr")`): 
+- `r pkg("ergm")` provides function to fit, simulate and analyse exponential-family random graph models (ERGM). Depending on specific needs, several specialised extentions are available
 
 |Use case|Package|
 |--------|-------|
 |Count weights|`r pkg("ergm.count")`|
 |Egocentrically sampled networks|`r pkg("ergm.ego")`|
-|Multilayer networks|`r pkg("ergm.multi")`|
+|Multilayer networks and samples of networks|`r pkg("ergm.multi")`|
 |Rank-order networks|`r pkg("ergm.rank")`|
 |Modeling ERGM-generating processes|`r pkg("ergmgp")`|
 |Fit ERGM to small networks|`r pkg("ergmgp")`|
 |Small hierarchical ERGMs|`r pkg("lightergm")`|
 |Large hierarchical ERGMs|`r pkg("biergm")`|
-|Analyse and simulate temporal networks|`r pkg("tergm")`|
-|Bootstrap assessment of (temporal) ERGM|`r pkg("btergm")`|
 
 - `r pkg("amen")` offer additive and multiplicative effect (AME) models with regression terms, covariance structure of the social relations model (Warner, Kenny and Stoto ([1979](https://doi.org/10.1037/0022-3514.37.10.1742)), and multiplicative factor models (Hoff [2009](https://doi.org/10.1007/s10588-008-9040-4)). It supports  binary networks as well as valued ones (assuming a Gaussian, zero-inflated/tobit, ordinal, or fixed-rank nomination model)
 
@@ -129,6 +125,33 @@ This section does not include Bayesian networks and Markov Random-Field models a
 - `r pkg("multinets")` is an `igraph` extension to analyse multilevel networks as described in  Lazega and Snijders's book ([2016](https://doi.org/10.1007/978-3-319-24520-1)).
 
 - `r pkg("nda")` gathers non-parametric dimensionality-reduction functions  with/out (automated) feature selection and limited plotting capabilities.
+
+- `r pkg("lolog")` implements Latent Order Logistic (LOLOG) models, a network formation process in which edges are added one at a time drawn from a distribution conditional on edges already added, with order unknown.
+
+## Dynamic Networks
+
+The following packages focus on modeling and simulation of networks that evolve over time and network processes that occur over time.
+
+### Relational Events
+
+Relational event data contains information about exact times during which the nodes interact. This is commonly observed for e-mail, radio, and other communications.
+
+- `r pkg("rem")` and `r pkg("relevent")` both contain functions to fit and simulate dyad-oriented relational event models. `r pkg("relevent")` can also estimate event sequence data without time stamps.
+
+- `r pkg("goldfish")` offers functions to fit and simulate actor-oriented dynamic network actor models and dyad-oriented relational event models.
+
+### Discrete Observations
+
+The following packages are focused on modeling series of networks, also known as panel data.
+
+- `r pkg("tergm")` a set of extensions for `r pkg("ergm")` for fitting and simulating discrete-time models for series of networks (or a long-term equilibrium of a discrete-time network process) where each time step is modeled as a draw from an ERGM conditional on the prior time steps.
+
+- `r pkg("dnr")` estimation of discrete-time models for series of networks where each time-step is modeled as a draw from an ERGM conditional on prior time steps, subject to the constraint that within each time step, edge variables are independent. Varying node sets are also supported.
+
+- `r pkg("btergm")` bootstrap inference for discrete-time models for series of networks where each time step is modeled as a draw from an ERGM conditional on the prior time steps.
+
+- `r pkg("RSiena")` estimation of continuous-time Stochastic Actor-Oriented Models (SAOMs) for panel network data.
+
 
 # Ad-hoc Packages
 
