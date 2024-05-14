@@ -306,7 +306,9 @@ Extensions for `ggplot2`:
 
 - `r pkg("idopNetwork")` implments the model proposed by Cao et al ([2022](https://doi.org/10.1080/19490976.2022.2106103)) to convert static data into their 'dynamic' form contextually inferring informative, dynamic, multi-directional networks with clusterable structures.
 
-- `r pkg("latenetwork")` provides functions to fit and simulate latent position and cluster model using `network` objects and compatibly with `ergm` approaches.
+- `r pkg("latentnet")` provides functions to fit and simulate latent position and cluster model using `network` objects and compatibly with `ergm` approaches.
+
+- `r pkg("latenetwork")` TODO
 
 - `r pkg("netClust")` provides a function to cluster unilayer (`netClust::netEM_unilayer`) and multilayer (`netClust::netEM_multilayer`) networks by means of finite mixtures and expectation-maximisation.
 
